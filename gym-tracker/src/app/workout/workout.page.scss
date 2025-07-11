@@ -1,0 +1,142 @@
+.timer-section {
+  margin: 16px;
+  
+  ion-card {
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--ion-color-primary), var(--ion-color-primary-shade));
+    color: white;
+  }
+  
+  .timer-display {
+    text-align: center;
+    margin-bottom: 16px;
+    
+    h2 {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 0;
+      color: white;
+    }
+    
+    p {
+      margin: 8px 0 0 0;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.start-section {
+  margin: 16px;
+  
+  ion-card {
+    border-radius: 16px;
+  }
+  
+  ion-button {
+    margin: 8px 0;
+  }
+}
+
+.current-exercise {
+  margin: 16px;
+  
+  ion-card {
+    border-radius: 12px;
+  }
+  
+  .exercise-info {
+    h3 {
+      margin: 0 0 8px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--ion-color-dark);
+    }
+    
+    p {
+      margin: 0 0 16px 0;
+      color: var(--ion-color-medium);
+    }
+  }
+  
+  .set-tracker {
+    margin: 16px 0;
+    
+    .set-item {
+      text-align: center;
+      
+      h4 {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+        color: var(--ion-color-medium);
+      }
+      
+      .set-number {
+        display: inline-block;
+        margin: 0 8px;
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--ion-color-dark);
+        min-width: 40px;
+      }
+      
+      ion-button {
+        --padding-start: 8px;
+        --padding-end: 8px;
+        --min-height: 32px;
+      }
+    }
+  }
+}
+
+.exercise-list {
+  margin: 16px;
+  
+  ion-card {
+    border-radius: 12px;
+  }
+  
+  ion-item {
+    --border-radius: 8px;
+    margin: 4px 0;
+    cursor: pointer;
+    
+    &.active {
+      --background: var(--ion-color-primary-tint);
+      --color: var(--ion-color-primary-contrast);
+    }
+  }
+}
+
+.summary-section {
+  margin: 16px;
+  
+  ion-card {
+    border-radius: 12px;
+  }
+}
+
+ion-content {
+  --background: var(--ion-color-light);
+}
+
+ion-card {
+  margin: 8px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+ion-card-title {
+  font-weight: bold;
+  color: var(--ion-color-dark);
+}
+
+ion-card-subtitle {
+  color: var(--ion-color-medium);
+}
+
+ion-badge {
+  font-size: 12px;
+}
+
+ion-button {
+  --border-radius: 8px;
+} 
