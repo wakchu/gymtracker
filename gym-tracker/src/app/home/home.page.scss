@@ -84,6 +84,35 @@ ion-card {
   margin: 8px 0;
 }
 
+// Animazione fade-in per le card
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ion-card {
+  animation: fadeInCard 0.6s ease;
+}
+
+// Animazione hover sui pulsanti
+ion-button:hover {
+  transform: scale(1.04);
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+// Animazione hover sulle card
+ion-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+  transition: box-shadow 0.2s;
+}
+
 ion-card-title {
   font-weight: bold;
   color: var(--ion-color-dark);
